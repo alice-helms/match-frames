@@ -37,6 +37,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     color: rgb(200, 228, 200);
+    line-height: 0.6em;
 }
 
 h2 {
@@ -62,23 +63,18 @@ h4 {
     font-style: normal;
 }
 
-.dropdown-click summary {
-    list-style: none;
-    background-color: #444;
-    color: white;
-    padding: 0.5em 1em;
-    border-radius: 0.3em;
-    font-size: 2.5rem;
-    border: none;
+nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0.5em;
 }
 
-.dropdown-click .dropdown-content {
-    margin: 0.3em;
-    background-color: #222;
-    border-radius: 0.3em;
+
+.topE1 ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 0.1em;
 }
