@@ -1,8 +1,3 @@
-/* ===== YOUR CSS GOES HERE ===== */
-/* ===== START BY IMPORTING YOUR FONTS ===== */
-/* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
-/* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
-
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+20&family=Michroma&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Rubik+80s+Fade&family=Rubik+Iso&family=Rubik+Lines&family=Rubik+Vinyl&family=Russo+One&family=Silkscreen:wght@400;700&family=VT323&display=swap');
 
 * {
@@ -25,9 +20,7 @@ body {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(https://i.pinimg.com/originals/dd/c3/06/ddc306a6a88b9dd464f0151cb8347479.gif);
-    background-size: cover;
-    background-position: center;
+
 }
 
 header {}
@@ -41,7 +34,7 @@ p {
 }
 
 h1 {
-    font-size: 7em;
+    font-size: 4em;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -70,50 +63,3 @@ h4 {
     font-weight: 400;
     font-style: normal;
 }
-
-.homebuttons {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 0;
-    align-items: center;
-    margin: 4em;
-}
-
-.moviebutton {
-    text-decoration: none;
-    margin: 1em;
-    padding: 0.5em;
-    color: white;
-}
-
-.tvbutton {
-    text-decoration: none;
-    border: 0.2em solid yellow;
-    margin: 1em;
-    padding: 0.5em;
-    color: white;
-}
-
-
-
-
-
-
-
-/*
-@media screen and (min-width: 50rem) {
-    html {
-        max-width: 80rem;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .homebuttons {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-    }
-}
-*/
