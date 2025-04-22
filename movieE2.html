@@ -13,51 +13,51 @@
     <link rel="stylesheet" href="styles.normalize.css" />
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
     <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/moviehome.css" />
+    <link rel="stylesheet" href="styles/movieE2.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
 </head>
 
 <body>
     <!-- YOUR HTML GOES HERE -->
-    <h1>MatchFrames</h1>
-
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="tvhome.html">TV Shows</a></li>
+            <li><a href="moviehome.html">Movies</a></li>
         </ul>
     </nav>
 
-    <details class="dropdown-click">
-        <summary>Easy</summary>
-        <div class="dropdown-content">
-            <a href="movieE1.html">Level 1</a>
-            <a href="movieE2.html">Level 2</a>
-            <a href="movieE3.html">Level 3</a>
+    <h1>MatchFrames</h1>
+    <div class="topE1">
+        <ul>
+            <li>
+                <h3>Easy</h3>
+            </li>
+            <li>
+                <h2>Movies</h2>
+            </li>
+            <li>
+                <h3>Level 1</h3>
+            </li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>Match the Scene</h1>
+        <div class="game-controls">
+            <div>Time: <span id="timer">0</span>s</div>
+            <div>Score: <span id="score">0</span></div>
         </div>
-    </details>
-
-    <details class="dropdown-click">
-        <summary>Medium</summary>
-        <div class="dropdown-content">
-            <a href="movieM1.html">Level 1</a>
-            <a href="movieM2.html">Level 2</a>
-            <a href="movieM3.html">Level 3</a>
-        </div>
-    </details>
-
-    <details class="dropdown-click">
-        <summary>Hard</summary>
-        <div class="dropdown-content">
-            <a href="movieH1.html">Level 1</a>
-            <a href="movieH2.html">Level 2</a>
-            <a href="movieH3.html">Level 3</a>
-        </div>
-    </details>
+    </header>
 
 
+    <section id="game-board"></section>
+    <button id="next-level">Next Level</button>
+
+
+
+    <script src="scripts/movieE2.js"></script>
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
 </body>
 
