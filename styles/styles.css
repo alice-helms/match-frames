@@ -1,8 +1,3 @@
-/* ===== YOUR CSS GOES HERE ===== */
-/* ===== START BY IMPORTING YOUR FONTS ===== */
-/* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
-/* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
-
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+20&family=Michroma&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Rubik+80s+Fade&family=Rubik+Iso&family=Rubik+Lines&family=Rubik+Vinyl&family=Russo+One&family=Silkscreen:wght@400;700&family=VT323&display=swap');
 
 * {
@@ -71,53 +66,86 @@ h4 {
 }
 
 .homebuttons {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
     padding: 0;
     align-items: center;
-    margin: 4em;
+}
+
+.homebuttons h2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2em;
 }
 
 .moviebutton {
     text-decoration: none;
-    margin: 1em;
     padding: 0.5em;
     color: white;
 }
 
 .tvbutton {
     text-decoration: none;
-    margin: 1em;
     padding: 0.5em;
     color: white;
 }
 
 .aboutbutton {
     text-decoration: none;
-    margin: 1em;
     padding: 0.5em;
     color: white;
 }
 
 
-
-
-
-
-/*
-@media screen and (min-width: 50rem) {
+@media (max-width: 48rem) {
     html {
-        max-width: 80rem;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 11px;
     }
 
-    .homebuttons {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .homebuttons h2 {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
+        align-items: center;
         justify-content: space-between;
     }
+
 }
-*/
+
+
+@media (max-width: 30rem) {
+    html {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .homebuttons h2 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}

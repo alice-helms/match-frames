@@ -81,7 +81,7 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    window.location.href = 'movieE3.html';
+    window.location.href = 'movieE2.html';
 });
 
 startBtn.addEventListener('click', () => {

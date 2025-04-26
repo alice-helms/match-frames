@@ -11,11 +11,14 @@ let timer = 0;
 let timerInterval;
 let score = 0;
 let matched = 0;
+let mistakes = 0;
 let flippedCards = [];
 const board = document.getElementById('game-board');
 const timerDisplay = document.getElementById('timer');
 const scoreDisplay = document.getElementById('score');
 const nextLevelBtn = document.getElementById('next-level');
+const mistakesDisplay = document.getElementById('mistakes');
+const startBtn = document.getElementById('start-game');
 
 function shuffle(array) {
     return array.concat(array).sort(() => 0.5 - Math.random());
@@ -63,6 +66,9 @@ function handleClick(card) {
             }
             flippedCards = [];
         } else {
+            mistakes++;
+            mistakesDisplay.textContent = mistakes;
+
             first.classList.add('shake');
             second.classList.add('shake');
             setTimeout(() => {
@@ -78,5 +84,19 @@ nextLevelBtn.addEventListener('click', () => {
     alert('Next level coming soon!');
 });
 
-startTimer();
-generateBoard();
+startBtn.addEventListener('click', () => {
+    startBtn.style.display = 'none';
+    board.classList.remove('hidden');
+    generateBoard();
+    startTimer();
+});
+
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

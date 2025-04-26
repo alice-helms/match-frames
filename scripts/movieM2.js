@@ -1,10 +1,10 @@
-const images = [
-    'https://i.pinimg.com/736x/6b/28/e6/6b28e6955e4a60c9f946c2373618a2fe.jpg',
-    'https://i.pinimg.com/736x/19/3a/d1/193ad114b26b17647095d7ae0ff12ea1.jpg',
-    'https://i.pinimg.com/736x/ac/76/82/ac76820a2d092c7f5a481abb5b86e343.jpg',
-    'https://i.pinimg.com/736x/2f/e0/2d/2fe02dfab5d0230b82fd76129877368c.jpg',
-    'https://i.pinimg.com/736x/ed/00/84/ed0084794bcad12095cb832dc9185a70.jpg',
-    'https://i.pinimg.com/736x/30/70/67/3070673c25a0e0515edae71b606eaafc.jpg',
+const imagePairs = [
+    { src: 'https://i.pinimg.com/474x/c9/a0/4b/c9a04baa9ef3be6ebca4e20b76e4e7b3.jpg', matchId: 'rdj' },
+    { src: 'https://i.pinimg.com/474x/39/ad/f1/39adf16f847b20665ea09cd0f38bfcff.jpg', matchId: 'rdj' },
+    { src: 'images/hermione1.jpg', matchId: 'hermione' },
+    { src: 'images/hermione2.jpg', matchId: 'hermione' },
+    { src: 'images/ron1.jpg', matchId: 'ron' },
+    { src: 'images/ron2.jpg', matchId: 'ron' }
 ];
 
 let timer = 0;
@@ -32,15 +32,16 @@ function startTimer() {
 }
 
 function generateBoard() {
-    const shuffled = shuffle(images);
+    const shuffled = [...imagePairs].sort(() => 0.5 - Math.random());
     board.innerHTML = '';
-    shuffled.forEach((imgSrc) => {
+
+    shuffled.forEach(({ src, matchId }) => {
         const card = document.createElement('div');
         card.classList.add('card');
-        card.dataset.img = imgSrc;
+        card.dataset.matchId = matchId;
 
         const img = document.createElement('img');
-        img.src = imgSrc;
+        img.src = src;
         card.appendChild(img);
 
         card.addEventListener('click', () => handleClick(card));
@@ -54,7 +55,7 @@ function handleClick(card) {
 
     if (flippedCards.length === 2) {
         const [first, second] = flippedCards;
-        if (first.dataset.img === second.dataset.img) {
+        if (first.dataset.matchId === second.dataset.matchId) {
             first.classList.add('matched');
             second.classList.add('matched');
             score++;
@@ -81,7 +82,7 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    window.location.href = 'movieE3.html';
+    window.location.href = 'movieM3.html';
 });
 
 startBtn.addEventListener('click', () => {
@@ -90,7 +91,6 @@ startBtn.addEventListener('click', () => {
     generateBoard();
     startTimer();
 });
-
 
 function myFunction() {
     var x = document.getElementById("myLinks");

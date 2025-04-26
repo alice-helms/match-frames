@@ -170,3 +170,77 @@ h4 {
 #myLinks a:hover {
     color: rgb(43, 170, 43);
 }
+
+@media (max-width: 48rem) {
+    html {
+        font-size: 11px;
+    }
+
+    .topnav a {
+        font-size: 1.1em;
+    }
+
+    #myLinks a {
+        font-size: 1em;
+        padding: 0.1em;
+        padding-top: 1em;
+    }
+
+    #containdrops {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+
+    .dropdown-click summary {
+        margin: 0.6em;
+        padding: 0.5em 1em;
+        border-radius: 0.3em;
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        line-height: 1.5em;
+    }
+
+}
+
+
+
+@media (max-width: 30rem) {
+    html {
+        font-size: 10px;
+    }
+
+    .topnav a {
+        font-size: 1.1em;
+    }
+
+    #myLinks a {
+        font-size: 1em;
+        padding: 0.1em;
+        padding-top: 1em;
+    }
+
+    #containdrops {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+
+    .dropdown-click summary {
+        margin: 0.6em;
+        padding: 0.5em 1em;
+        border-radius: 0.3em;
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        line-height: 1.5em;
+    }
+
+}
