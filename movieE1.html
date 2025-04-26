@@ -20,15 +20,17 @@
 
 <body>
     <!-- YOUR HTML GOES HERE -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tvhome.html">TV Shows</a></li>
-            <li><a href="moviehome.html">Movies</a></li>
-        </ul>
-    </nav>
 
-    <h1>MatchFrames</h1>
+    <div class="topnav">
+        <a href="index.html" class="active">MatchFrames</a>
+        <div id="myLinks">
+            <a href="tvhome.html">TV Shows</a>
+            <a href="moviehome.html">Movies</a>
+            <a href="abouthome.html">About</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">★★★</a>
+    </div>
 
     <header>
         <div class="topE1">
@@ -38,7 +40,7 @@
         </div>
     </header>
 
-    <button id="start-game">▶Start Game</button>
+    <button id="start-game">Start Game</button>
     <section id="game-board" class="hidden"></section>
 
 

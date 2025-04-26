@@ -104,8 +104,6 @@ nav ul li a {
     color: rgb(200, 228, 200);
 }
 
-/* generated below */
-
 .game-controls {
     display: flex;
     justify-content: center;
@@ -183,4 +181,8 @@ nav ul li a {
 
 .shake {
     animation: shake 0.4s;
+}
+
+.hidden {
+    display: none;
 }

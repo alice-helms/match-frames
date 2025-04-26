@@ -18,6 +18,7 @@ const timerDisplay = document.getElementById('timer');
 const scoreDisplay = document.getElementById('score');
 const nextLevelBtn = document.getElementById('next-level');
 const mistakesDisplay = document.getElementById('mistakes');
+const startBtn = document.getElementById('start-game');
 
 function shuffle(array) {
     return array.concat(array).sort(() => 0.5 - Math.random());
@@ -84,5 +85,9 @@ nextLevelBtn.addEventListener('click', () => {
     window.location.href = 'movieM2.html';
 });
 
-startTimer();
-generateBoard();
+startBtn.addEventListener('click', () => {
+    startBtn.style.display = 'none';
+    board.classList.remove('hidden');
+    generateBoard();
+    startTimer();
+});
