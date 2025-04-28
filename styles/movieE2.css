@@ -311,6 +311,10 @@ nav ul li a {
         font-size: 2em;
     }
 
+    .active {
+        margin-top: 0.8em;
+        font-size: 2em;
+    }
 
 
 }
@@ -372,6 +376,11 @@ nav ul li a {
     }
 
     .icon i {
+        font-size: 1.5em;
+    }
+
+    .active {
+        margin-top: 0.8em;
         font-size: 1.5em;
     }
 
