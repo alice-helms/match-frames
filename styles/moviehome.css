@@ -55,7 +55,6 @@ h3 {
     font-weight: 400;
     font-style: normal;
     color: rgb(200, 228, 200);
-    padding-top: 2em;
 }
 
 h4 {
@@ -72,6 +71,12 @@ h4 {
     justify-content: space-around;
     padding-top: 6em;
 }
+
+.dropdown-click {
+    position: relative;
+    display: inline-block;
+}
+
 
 .dropdown-click summary {
     list-style: none;
@@ -94,7 +99,6 @@ h4 {
 
 
 .dropdown-click .dropdown-content {
-    margin: 0.3em;
     border-radius: 0.3em;
     display: flex;
     flex-flow: column wrap;
@@ -102,14 +106,15 @@ h4 {
     align-items: center;
 }
 
+
 .dropdown-content a {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(43, 170, 43);
+    color: rgb(90, 4, 90);
     text-decoration: none;
     list-style: none;
-    font-size: 1em;
+    font-size: 1.5em;
     border-radius: 0.3em;
     background-color: rgb(200, 228, 200);
     padding: 0.5em 1em;

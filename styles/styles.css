@@ -47,7 +47,7 @@ h2 {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(43, 170, 43);
+    color: rgb(200, 228, 200);
 }
 
 h3 {
@@ -121,6 +121,50 @@ h4 {
         justify-content: space-between;
     }
 
+    .icon-overlay {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .icon-overlay i {
+        font-size: 12rem;
+    }
+
+    .overlay-text {
+        font-size: 1.8rem;
+        left: 54%;
+    }
+
+    .icon-overlay2 {
+        width: 10rem;
+        height: 9rem;
+    }
+
+    .icon-overlay2 i {
+        font-size: 10rem;
+    }
+
+    .overlay-text2 {
+        font-size: 1.6rem;
+        left: 58%;
+    }
+
+    .icon-overlay3 {
+        width: 10rem;
+        height: 9rem;
+        margin: 1em;
+        margin-left: 2em;
+    }
+
+    .icon-overlay3 i {
+        font-size: 10rem;
+    }
+
+    .overlay-text3 {
+        font-size: 1.6rem;
+        left: 52%;
+    }
+
 }
 
 
@@ -148,4 +192,118 @@ h4 {
         justify-content: space-between;
     }
 
+    .icon-overlay {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .icon-overlay i {
+        font-size: 9rem;
+    }
+
+    .overlay-text {
+        font-size: 1.5rem;
+        left: 53%;
+    }
+
+    .icon-overlay2 {
+        width: 7.5rem;
+        height: 7rem;
+    }
+
+    .icon-overlay2 i {
+        font-size: 7.5rem;
+    }
+
+    .overlay-text2 {
+        font-size: 1.2rem;
+        left: 57%;
+    }
+
+    .icon-overlay3 {
+        width: 7.5rem;
+        height: 7rem;
+        margin: 1em;
+        margin-left: 2em;
+    }
+
+    .icon-overlay3 i {
+        font-size: 7.5rem;
+    }
+
+    .overlay-text3 {
+        font-size: 1.2rem;
+        left: 52%;
+    }
+
+}
+
+.icon-overlay {
+    position: relative;
+    display: inline-block;
+    width: 16rem;
+    height: 16rem;
+    text-align: center;
+}
+
+.icon-overlay i {
+    font-size: 16rem;
+    color: rgb(200, 228, 200);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    color: rgb(90, 4, 90);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 2.2rem;
+}
+
+.icon-overlay2 {
+    position: relative;
+    display: inline-block;
+    width: 13rem;
+    height: 11rem;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
+.icon-overlay2 i {
+    font-size: 13rem;
+    color: rgb(200, 228, 200);
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    color: rgb(90, 4, 90);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 3.5rem;
+}
+
+.icon-overlay3 {
+    position: relative;
+    display: inline-block;
+    width: 13rem;
+    height: 11rem;
+    text-align: center;
+}
+
+.icon-overlay3 i {
+    font-size: 13rem;
+    color: rgb(200, 228, 200);
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(90, 4, 90);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 2.5rem;
 }
