@@ -269,6 +269,10 @@ nav ul li a {
         font-size: 11px;
     }
 
+    h1 {
+        font-size: 1.5em;
+    }
+
     #game-board {
         grid-template-columns: repeat(4, 9rem);
         grid-template-rows: repeat(3, 12rem);
@@ -325,6 +329,10 @@ nav ul li a {
 @media (max-width: 30rem) {
     html {
         font-size: 10px;
+    }
+
+    h1 {
+        font-size: 1em;
     }
 
     #start-game {
