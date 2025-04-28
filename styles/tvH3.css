@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+20&family=Michroma&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Rubik+80s+Fade&family=Rubik+Iso&family=Rubik+Lines&family=Rubik+Vinyl&family=Russo+One&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 12px;
+    text-align: center;
+}
+
+body {
+    background: black;
+    padding: 1rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p {
+    font-size: 2em;
+    line-height: 1.4;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(200, 228, 200);
+    line-height: 0.6em;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(43, 170, 43);
+}
+
+h3 {
+    font-size: 2em;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(200, 228, 200);
+}
+
+h4 {
+    font-size: 2em;
+    font-style: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+.topE1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 0.1em;
+    list-style: none;
+    text-align: center;
+}
+
+.topE1 h1 {
+    color: rgb(43, 170, 43);
+}
+
+#start-game {
+    padding: 1.5em 2.5em;
+    font-size: 1.5em;
+    background-color: rgb(43, 170, 43);
+    color: white;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10em;
+}
+
+.game-controls {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1em;
+    color: rgb(200, 228, 200);
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 12rem);
+    grid-template-rows: repeat(3, 15rem);
+    gap: 1em;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+.card {
+    width: 12rem;
+    height: 15rem;
+    border: 0.3em solid black;
+    border-radius: 0.7em;
+    cursor: pointer;
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7em;
+}
+
+.card.matched {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#next-level {
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: rgb(43, 170, 43);
+    color: white;
+    border: none;
+    border-radius: 0.7em;
+    cursor: pointer;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2.75em;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(90, 4, 90);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.topnav a.icon {
+    float: right;
+    color: rgb(90, 4, 90);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.topnav a:hover {
+    color: rgb(43, 170, 43);
+}
+
+#myLinks a {
+    color: rgb(200, 228, 200);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin: 0.3em;
+    padding-left: 6.5em;
+}
+
+#myLinks a:hover {
+    color: rgb(43, 170, 43);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 48rem) {
+    html {
+        font-size: 11px;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(4, 9rem);
+        grid-template-rows: repeat(3, 12rem);
+        gap: 1.2rem;
+    }
+
+    .card {
+        width: 9rem;
+        height: 12rem;
+    }
+
+    .game-controls {
+        gap: 1em;
+    }
+
+    #start-game {
+        font-size: 2em;
+    }
+
+    .topnav a {
+        font-size: 1.1em;
+        padding: 2em;
+    }
+
+    #myLinks a {
+        font-size: 1em;
+        padding: 0.7em;
+        padding-top: 2em;
+    }
+}
+
+
+@media (max-width: 30rem) {
+    html {
+        font-size: 10px;
+    }
+
+    #start-game {
+        padding: 1em 2em;
+        font-size: 1.8em;
+        margin-top: 5em;
+    }
+
+    .game-controls {
+        flex-direction: column;
+        gap: 0.5em;
+        font-size: 1.5em;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(3, 9rem);
+        grid-template-rows: repeat(4, 11rem);
+        gap: 1rem;
+    }
+
+    .card {
+        width: 9rem;
+        height: 11rem;
+        border-radius: 0.5rem;
+    }
+
+    #next-level {
+        width: 80%;
+        font-size: 1.8em;
+        margin: 2em auto;
+    }
+
+    .topnav a {
+        font-size: 1.1em;
+        padding: 2em;
+    }
+
+    #myLinks a {
+        font-size: 1em;
+        padding: 0.5em;
+        padding-top: 2em;
+    }
+}
