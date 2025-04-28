@@ -1,10 +1,16 @@
 const imagePairs = [
-    { src: 'https://i.pinimg.com/474x/c9/a0/4b/c9a04baa9ef3be6ebca4e20b76e4e7b3.jpg', matchId: 'rdj' },
-    { src: 'https://i.pinimg.com/474x/39/ad/f1/39adf16f847b20665ea09cd0f38bfcff.jpg', matchId: 'rdj' },
-    { src: 'images/hermione1.jpg', matchId: 'hermione' },
-    { src: 'images/hermione2.jpg', matchId: 'hermione' },
-    { src: 'images/ron1.jpg', matchId: 'ron' },
-    { src: 'images/ron2.jpg', matchId: 'ron' }
+    { src: 'images/rom.jpg', matchId: 'com' },
+    { src: 'images/rom2.jpg', matchId: 'com' },
+    { src: 'images/war.jpg', matchId: 'bomb' },
+    { src: 'images/war2.jpg', matchId: 'bomb' },
+    { src: 'images/horror.jpg', matchId: 'scary' },
+    { src: 'images/horror2.jpg', matchId: 'scary' },
+    { src: 'images/comedy.jpg', matchId: 'haha' },
+    { src: 'images/comedy2.jpg', matchId: 'haha' },
+    { src: 'images/who.jpg', matchId: 'dun' },
+    { src: 'images/who2.jpg', matchId: 'dun' },
+    { src: 'images/sport.jpg', matchId: 'tennis' },
+    { src: 'images/sport2.jpg', matchId: 'tennis' },
 ];
 
 let timer = 0;
@@ -61,7 +67,7 @@ function handleClick(card) {
             score++;
             scoreDisplay.textContent = score;
             matched += 2;
-            if (matched === images.length * 2) {
+            if (matched === imagePairs.length) {
                 nextLevelBtn.style.display = 'inline-block';
                 clearInterval(timerInterval);
             }
@@ -82,7 +88,7 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    window.location.href = 'movieM2.html';
+    alert('Next level coming soon!');
 });
 
 startBtn.addEventListener('click', () => {

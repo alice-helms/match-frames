@@ -1,10 +1,16 @@
 const imagePairs = [
-    { src: 'https://i.pinimg.com/474x/c9/a0/4b/c9a04baa9ef3be6ebca4e20b76e4e7b3.jpg', matchId: 'rdj' },
-    { src: 'https://i.pinimg.com/474x/39/ad/f1/39adf16f847b20665ea09cd0f38bfcff.jpg', matchId: 'rdj' },
-    { src: 'images/hermione1.jpg', matchId: 'hermione' },
-    { src: 'images/hermione2.jpg', matchId: 'hermione' },
-    { src: 'images/ron1.jpg', matchId: 'ron' },
-    { src: 'images/ron2.jpg', matchId: 'ron' }
+    { src: 'images/netflix.jpg', matchId: 'net' },
+    { src: 'images/netflix2.jpg', matchId: 'net' },
+    { src: 'images/peacock.jpg', matchId: 'pea' },
+    { src: 'images/peacock2.jpg', matchId: 'pea' },
+    { src: 'images/hulu.jpg', matchId: 'hu' },
+    { src: 'images/hulu2.jpg', matchId: 'hu' },
+    { src: 'images/disney.jpg', matchId: 'dis' },
+    { src: 'images/disney2.jpg', matchId: 'dis' },
+    { src: 'images/hbo.jpg', matchId: 'max' },
+    { src: 'images/hbo2.jpg', matchId: 'max' },
+    { src: 'images/apple.jpg', matchId: 'app' },
+    { src: 'images/apple2.jpg', matchId: 'app' },
 ];
 
 let timer = 0;
@@ -61,7 +67,7 @@ function handleClick(card) {
             score++;
             scoreDisplay.textContent = score;
             matched += 2;
-            if (matched === images.length * 2) {
+            if (matched === imagePairs.length) {
                 nextLevelBtn.style.display = 'inline-block';
                 clearInterval(timerInterval);
             }

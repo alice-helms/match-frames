@@ -1,10 +1,16 @@
 const imagePairs = [
-    { src: 'https://i.pinimg.com/474x/c9/a0/4b/c9a04baa9ef3be6ebca4e20b76e4e7b3.jpg', matchId: 'rdj' },
-    { src: 'https://i.pinimg.com/474x/39/ad/f1/39adf16f847b20665ea09cd0f38bfcff.jpg', matchId: 'rdj' },
-    { src: 'images/hermione1.jpg', matchId: 'hermione' },
-    { src: 'images/hermione2.jpg', matchId: 'hermione' },
-    { src: 'images/ron1.jpg', matchId: 'ron' },
-    { src: 'images/ron2.jpg', matchId: 'ron' }
+    { src: 'images/booth.jpg', matchId: 'phone' },
+    { src: 'images/booth2.jpg', matchId: 'phone' },
+    { src: 'images/cloon.jpg', matchId: 'card' },
+    { src: 'images/casino.jpg', matchId: 'card' },
+    { src: 'images/wilson.jpg', matchId: 'beach' },
+    { src: 'images/tom.jpg', matchId: 'beach' },
+    { src: 'images/jack.jpg', matchId: 'pirate' },
+    { src: 'images/dirt.jpg', matchId: 'pirate' },
+    { src: 'images/bear.jpg', matchId: 'wild' },
+    { src: 'images/leo.jpg', matchId: 'wild' },
+    { src: 'images/tornado.jpg', matchId: 'land' },
+    { src: 'images/twister.jpg', matchId: 'land' },
 ];
 
 let timer = 0;
@@ -61,7 +67,7 @@ function handleClick(card) {
             score++;
             scoreDisplay.textContent = score;
             matched += 2;
-            if (matched === images.length * 2) {
+            if (matched === imagePairs.length) {
                 nextLevelBtn.style.display = 'inline-block';
                 clearInterval(timerInterval);
             }
@@ -82,7 +88,7 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    window.location.href = 'movieM2.html';
+    window.location.href = 'movieH2.html';
 });
 
 startBtn.addEventListener('click', () => {

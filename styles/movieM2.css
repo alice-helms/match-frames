@@ -139,7 +139,7 @@ nav ul li a {
 .card {
     width: 12rem;
     height: 15rem;
-    border: 0.3em solid rgb(200, 228, 200);
+    border: 0.3em solid grey;
     border-radius: 0.7em;
     cursor: pointer;
     position: relative;

@@ -1,10 +1,16 @@
 const imagePairs = [
-    { src: 'https://i.pinimg.com/474x/c9/a0/4b/c9a04baa9ef3be6ebca4e20b76e4e7b3.jpg', matchId: 'rdj' },
-    { src: 'https://i.pinimg.com/474x/39/ad/f1/39adf16f847b20665ea09cd0f38bfcff.jpg', matchId: 'rdj' },
-    { src: 'images/hermione1.jpg', matchId: 'hermione' },
-    { src: 'images/hermione2.jpg', matchId: 'hermione' },
-    { src: 'images/ron1.jpg', matchId: 'ron' },
-    { src: 'images/ron2.jpg', matchId: 'ron' }
+    { src: 'images/legolas.jpg', matchId: 'lotr' },
+    { src: 'images/gimli.jpg', matchId: 'lotr' },
+    { src: 'images/tan.jpg', matchId: 'bullet' },
+    { src: 'images/lemon.jpg', matchId: 'bullet' },
+    { src: 'images/buzz.jpg', matchId: 'toy' },
+    { src: 'images/woody.jpg', matchId: 'toy' },
+    { src: 'images/ferris.jpg', matchId: 'day' },
+    { src: 'images/cam.jpg', matchId: 'day' },
+    { src: 'images/hiccup.jpg', matchId: 'dragon' },
+    { src: 'images/toothless.jpg', matchId: 'dragon' },
+    { src: 'images/jed.jpg', matchId: 'mini' },
+    { src: 'images/octo.jpg', matchId: 'mini' },
 ];
 
 let timer = 0;
@@ -61,7 +67,7 @@ function handleClick(card) {
             score++;
             scoreDisplay.textContent = score;
             matched += 2;
-            if (matched === images.length * 2) {
+            if (matched === imagePairs.length) {
                 nextLevelBtn.style.display = 'inline-block';
                 clearInterval(timerInterval);
             }

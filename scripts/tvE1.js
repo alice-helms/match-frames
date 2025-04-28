@@ -1,10 +1,10 @@
 const images = [
-    'https://i.pinimg.com/736x/6b/28/e6/6b28e6955e4a60c9f946c2373618a2fe.jpg',
-    'https://i.pinimg.com/736x/19/3a/d1/193ad114b26b17647095d7ae0ff12ea1.jpg',
-    'https://i.pinimg.com/736x/ac/76/82/ac76820a2d092c7f5a481abb5b86e343.jpg',
-    'https://i.pinimg.com/736x/2f/e0/2d/2fe02dfab5d0230b82fd76129877368c.jpg',
-    'https://i.pinimg.com/736x/ed/00/84/ed0084794bcad12095cb832dc9185a70.jpg',
-    'https://i.pinimg.com/736x/30/70/67/3070673c25a0e0515edae71b606eaafc.jpg',
+    'images/thebear.jpg',
+    'images/you.jpg',
+    'images/office.jpg',
+    'images/shel.jpg',
+    'images/story.jpg',
+    'images/eup.jpg',
 ];
 
 let timer = 0;
@@ -81,7 +81,7 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    window.location.href = 'movieE2.html';
+    window.location.href = 'tvE2.html';
 });
 
 startBtn.addEventListener('click', () => {

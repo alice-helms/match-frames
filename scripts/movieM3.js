@@ -1,10 +1,16 @@
 const imagePairs = [
-    { src: 'https://i.pinimg.com/474x/c9/a0/4b/c9a04baa9ef3be6ebca4e20b76e4e7b3.jpg', matchId: 'rdj' },
-    { src: 'https://i.pinimg.com/474x/39/ad/f1/39adf16f847b20665ea09cd0f38bfcff.jpg', matchId: 'rdj' },
-    { src: 'images/hermione1.jpg', matchId: 'hermione' },
-    { src: 'images/hermione2.jpg', matchId: 'hermione' },
-    { src: 'images/ron1.jpg', matchId: 'ron' },
-    { src: 'images/ron2.jpg', matchId: 'ron' }
+    { src: 'images/ryan.jpg', matchId: 'ry' },
+    { src: 'images/ryan2.jpg', matchId: 'ry' },
+    { src: 'images/hugh.jpg', matchId: 'hughj' },
+    { src: 'images/hugh2.jpg', matchId: 'hughj' },
+    { src: 'images/bill.jpg', matchId: 'skars' },
+    { src: 'images/bill2.jpg', matchId: 'skars' },
+    { src: 'images/matt.jpg', matchId: 'matthew' },
+    { src: 'images/matt2.jpg', matchId: 'matthew' },
+    { src: 'images/flo.jpg', matchId: 'pugh' },
+    { src: 'images/flo2.jpg', matchId: 'pugh' },
+    { src: 'images/cillian.jpg', matchId: 'irish' },
+    { src: 'images/cillian2.jpg', matchId: 'irish' },
 ];
 
 let timer = 0;
@@ -61,7 +67,7 @@ function handleClick(card) {
             score++;
             scoreDisplay.textContent = score;
             matched += 2;
-            if (matched === images.length * 2) {
+            if (matched === imagePairs.length) {
                 nextLevelBtn.style.display = 'inline-block';
                 clearInterval(timerInterval);
             }
