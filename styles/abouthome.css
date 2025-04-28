@@ -20,22 +20,20 @@ body {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(https://i.pinimg.com/originals/dd/c3/06/ddc306a6a88b9dd464f0151cb8347479.gif);
-    background-size: cover;
-    background-position: center;
 }
 
 
 p {
     font-size: 2em;
     line-height: 1.4;
-    font-family: "Nunito", sans-serif;
+    font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
+    color: rgb(200, 228, 200);
 }
 
 h1 {
-    font-size: 7em;
+    font-size: 4em;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -65,33 +63,189 @@ h4 {
     font-style: normal;
 }
 
-.homebuttons {
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(90, 4, 90);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+.topnav a.icon {
+    float: right;
+    color: rgb(90, 4, 90);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.topnav a:hover {
+    color: rgb(43, 170, 43);
+}
+
+#myLinks a {
+    color: rgb(200, 228, 200);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin: 0.3em;
+    padding-left: 5.5em;
+}
+
+#myLinks a:hover {
+    color: rgb(43, 170, 43);
+}
+
+
+
+.set-up {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    padding: 0;
     align-items: center;
-    margin: 4em;
 }
 
-.moviebutton {
+.set-up a {
+    list-style: none;
     text-decoration: none;
-    margin: 1em;
-    padding: 0.5em;
-    color: white;
 }
 
-.tvbutton {
-    text-decoration: none;
-    border: 0.2em solid yellow;
-    margin: 1em;
-    padding: 0.5em;
-    color: white;
+
+.icon-overlay {
+    position: relative;
+    display: inline-block;
+    width: 16rem;
+    height: 16rem;
+    text-align: center;
 }
 
-.aboutbutton {
-    text-decoration: none;
-    margin: 1em;
-    padding: 0.5em;
-    color: white;
+.icon-overlay i {
+    font-size: 16rem;
+    color: rgb(43, 170, 43);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    color: rgb(90, 4, 90);
+    font-family: "Silkscreen", sans-serif;
+    font-size: 2.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 48rem) {
+    html {
+        font-size: 11px;
+    }
+
+    .topnav a {
+        font-size: 1.1em;
+    }
+
+    #myLinks a {
+        font-size: 1em;
+        padding: 0.1em;
+        padding-top: 1em;
+    }
+
+    h1 {
+        line-height: 1.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .icon-overlay {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .icon-overlay i {
+        font-size: 12rem;
+    }
+
+    .overlay-text {
+        font-size: 1.5rem;
+        left: 54%;
+    }
+
+    .set-up {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 30rem) {
+    html {
+        font-size: 10px;
+    }
+
+    .topnav a {
+        font-size: 1.1em;
+    }
+
+    #myLinks a {
+        font-size: 1em;
+        padding: 0.1em;
+        padding-top: 1em;
+    }
+
+    h1 {
+        line-height: 1.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .icon-overlay {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .icon-overlay i {
+        font-size: 9rem;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+        left: 53%;
+    }
+
+    .set-up {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }

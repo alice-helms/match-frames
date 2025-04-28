@@ -261,6 +261,18 @@ h4 {
     font-size: 2.2rem;
 }
 
+/*
+.icon-overlay i:hover {
+    color: rgb(90, 4, 90);
+}
+
+.overlay-text :hover {
+    color: ;
+}
+*/
+
+
+
 .icon-overlay2 {
     position: relative;
     display: inline-block;
