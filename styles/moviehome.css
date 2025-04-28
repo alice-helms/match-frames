@@ -12,6 +12,7 @@
 html {
     font-size: 12px;
     text-align: center;
+    border: rgb(43, 170, 43) dotted 0.5em;
 }
 
 body {
@@ -54,11 +55,12 @@ h3 {
     font-weight: 400;
     font-style: normal;
     color: rgb(200, 228, 200);
+    padding-top: 2em;
 }
 
 h4 {
     font-size: 2.5em;
-    font-style: "Pixelify Sans", sans-serif;
+    font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -205,6 +207,9 @@ h4 {
         line-height: 1.5em;
     }
 
+    h3 {
+        font-size: 2em;
+    }
 }
 
 
@@ -243,4 +248,7 @@ h4 {
         line-height: 1.5em;
     }
 
+    h3 {
+        font-size: 2em;
+    }
 }

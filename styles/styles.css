@@ -20,7 +20,7 @@ body {
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(https://i.pinimg.com/originals/dd/c3/06/ddc306a6a88b9dd464f0151cb8347479.gif);
+    background-image: url('../images/glitchy.gif');
     background-size: cover;
     background-position: center;
 }
@@ -75,7 +75,7 @@ h4 {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2em;
+    padding: 1em 0em;
 }
 
 .moviebutton {
@@ -103,11 +103,11 @@ h4 {
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     h3 {
@@ -130,11 +130,11 @@ h4 {
     }
 
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     h3 {

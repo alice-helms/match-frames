@@ -1,16 +1,16 @@
 const imagePairs = [
-    { src: 'images/HGB.jpg', matchId: 'HG' },
-    { src: 'images/HGP.jpg', matchId: 'HG' },
-    { src: 'images/DB.jpg', matchId: 'DB' },
-    { src: 'images/DP.jpg', matchId: 'DB' },
-    { src: 'images/HPSSB.jpg', matchId: 'HP' },
-    { src: 'images/HPSSP.jpg', matchId: 'HP' },
-    { src: 'images/MRB.jpg', matchId: 'MR' },
-    { src: 'images/MRP.jpg', matchId: 'MR' },
-    { src: 'images/TMB.jpg', matchId: 'TM' },
-    { src: 'images/TMP.jpg', matchId: 'TM' },
-    { src: 'images/LWB.jpg', matchId: 'LW' },
-    { src: 'images/LWP.jpg', matchId: 'LW' },
+    { src: 'images/ocean.jpg', matchId: 'HG' },
+    { src: 'images/lost.jpg', matchId: 'HG' },
+    { src: 'images/paper.jpg', matchId: 'DB' },
+    { src: 'images/office.jpg', matchId: 'DB' },
+    { src: 'images/chicken.jpg', matchId: 'HP' },
+    { src: 'images/bad.jpg', matchId: 'HP' },
+    { src: 'images/umbrella.jpg', matchId: 'MR' },
+    { src: 'images/umbrellaposter.jpg', matchId: 'MR' },
+    { src: 'images/bluth.jpg', matchId: 'TM' },
+    { src: 'images/arrrested.jpg', matchId: 'TM' },
+    { src: 'images/bander.jpg', matchId: 'LW' },
+    { src: 'images/tucker.jpg', matchId: 'LW' },
 ];
 
 let timer = 0;
