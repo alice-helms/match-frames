@@ -273,6 +273,10 @@ nav ul li a {
         font-size: 1.5em;
     }
 
+    h3 {
+        font-size: 1.2em;
+    }
+
     #game-board {
         grid-template-columns: repeat(4, 9rem);
         grid-template-rows: repeat(3, 12rem);
@@ -332,6 +336,10 @@ nav ul li a {
     }
 
     h1 {
+        font-size: 1em;
+    }
+
+    h3 {
         font-size: 1em;
     }
 
