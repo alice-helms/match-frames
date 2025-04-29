@@ -74,7 +74,7 @@ h4 {
 
 .topnav a {
     float: left;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     padding: 14px 16px;
     text-decoration: none;
     font-family: "Press Start 2P", system-ui;
@@ -85,7 +85,7 @@ h4 {
 
 .topnav a.icon {
     float: right;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -144,7 +144,7 @@ h4 {
     top: 50%;
     left: 56%;
     transform: translate(-50%, -50%);
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Silkscreen", sans-serif;
     font-size: 2.2rem;
 }

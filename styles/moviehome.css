@@ -53,7 +53,7 @@ h3 {
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(200, 228, 200);
+    color: rgb(192, 27, 192);
 }
 
 h4 {
@@ -93,7 +93,7 @@ h4 {
 
 .dropdown-click summary:hover {
     background-color: rgb(43, 170, 43);
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
 }
 
 
@@ -110,7 +110,7 @@ h4 {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     text-decoration: none;
     list-style: none;
     font-size: 1.5em;
@@ -122,7 +122,7 @@ h4 {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(90, 4, 90);
+    background-color: rgb(192, 27, 192);
     color: rgb(200, 228, 200);
 }
 
@@ -138,7 +138,7 @@ h4 {
 
 .topnav a {
     float: left;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     padding: 14px 16px;
     text-decoration: none;
     font-family: "Press Start 2P", system-ui;
@@ -149,7 +149,7 @@ h4 {
 
 .topnav a.icon {
     float: right;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;

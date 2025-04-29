@@ -213,7 +213,7 @@ nav ul li a {
 
 .topnav a {
     float: left;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     padding: 0.5em 0.4em;
     text-decoration: none;
     font-family: "Press Start 2P", system-ui;
@@ -224,7 +224,7 @@ nav ul li a {
 
 .topnav a.icon {
     float: right;
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -400,4 +400,37 @@ nav ul li a {
         font-size: 1em;
     }
 
+}
+
+.card.selected {
+    box-shadow: 0 0 15px 5px rgb(43, 170, 43);
+    border: 3px solid rgb(43, 170, 43);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#win-message {
+    margin-top: 15rem;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 2rem;
+    color: rgb(192, 27, 192);
+    text-align: center;
+    margin-bottom: -25rem;
+    animation: fadeIn 1s ease forwards;
+}
+
+#win-image {
+    margin-top: 1rem;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

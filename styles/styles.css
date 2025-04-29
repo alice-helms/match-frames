@@ -258,14 +258,14 @@ h4 {
     top: 50%;
     left: 56%;
     transform: translate(-50%, -50%);
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Silkscreen", sans-serif;
     font-size: 2.2rem;
 }
 
 /*
 .icon-overlay i:hover {
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
 }
 
 .overlay-text :hover {
@@ -294,7 +294,7 @@ h4 {
     top: 50%;
     left: 61%;
     transform: translate(-50%, -50%);
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Silkscreen", sans-serif;
     font-size: 3.5rem;
 }
@@ -317,7 +317,7 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(90, 4, 90);
+    color: rgb(192, 27, 192);
     font-family: "Silkscreen", sans-serif;
     font-size: 2.5rem;
 }
