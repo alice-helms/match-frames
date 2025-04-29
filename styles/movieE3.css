@@ -120,10 +120,9 @@ nav ul li a {
 
 .game-controls {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 1em;
     margin: 0.5em;
-    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -139,7 +138,7 @@ nav ul li a {
 .card {
     width: 12rem;
     height: 15rem;
-    border: 0.3em solid grey;
+    border: 0.3em solid rgb(200, 228, 200);
     border-radius: 0.7em;
     cursor: pointer;
     position: relative;
@@ -215,7 +214,7 @@ nav ul li a {
 .topnav a {
     float: left;
     color: rgb(90, 4, 90);
-    padding: 14px 16px;
+    padding: 0.5em 0.4em;
     text-decoration: none;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
@@ -243,8 +242,8 @@ nav ul li a {
     display: flex;
     justify-content: center;
     font-size: 1em;
-    margin: 0.3em;
-    padding-left: 6.5em;
+    margin: 1.5em;
+    padding-left: 5.5em;
 }
 
 #myLinks a:hover {
@@ -253,7 +252,14 @@ nav ul li a {
 
 
 
+.icon i {
+    font-size: 2.5em;
+}
 
+.active {
+    margin-top: 0.8em;
+    font-size: 2.5em;
+}
 
 
 
@@ -261,6 +267,14 @@ nav ul li a {
 @media (max-width: 48rem) {
     html {
         font-size: 11px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
     }
 
     #game-board {
@@ -283,21 +297,50 @@ nav ul li a {
     }
 
     .topnav a {
-        font-size: 1.1em;
-        padding: 2em;
+        font-size: 1em;
+        padding: 1.5em;
     }
 
     #myLinks a {
         font-size: 1em;
-        padding: 0.7em;
-        padding-top: 2em;
+        padding: 0.3em;
+        padding-top: 1em;
     }
+
+    .game-controls {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .icon i {
+        font-size: 2em;
+    }
+
+    .active {
+        margin-top: 0.8em;
+        font-size: 2em;
+    }
+
+
 }
+
+
 
 
 @media (max-width: 30rem) {
     html {
         font-size: 10px;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 
     #start-game {
@@ -331,13 +374,63 @@ nav ul li a {
     }
 
     .topnav a {
-        font-size: 1.1em;
+        font-size: 1em;
         padding: 2em;
     }
 
     #myLinks a {
+        font-size: 0.8em;
+        padding: 0.2em;
+        padding-top: 1em;
+    }
+
+    .game-controls {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon i {
+        font-size: 1.5em;
+    }
+
+    .active {
+        margin-top: 0.8em;
         font-size: 1em;
-        padding: 0.5em;
-        padding-top: 2em;
+    }
+
+}
+
+.card.selected {
+    box-shadow: 0 0 15px 5px rgb(43, 170, 43);
+    border: 3px solid rgb(43, 170, 43);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+#win-message {
+    margin-top: 15rem;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 2rem;
+    color: rgb(43, 170, 43);
+    text-align: center;
+    margin-bottom: -25rem;
+    animation: fadeIn 1s ease forwards;
+}
+
+#win-image {
+    margin-top: 1rem;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

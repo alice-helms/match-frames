@@ -269,6 +269,14 @@ nav ul li a {
         font-size: 11px;
     }
 
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
     #game-board {
         grid-template-columns: repeat(4, 9rem);
         grid-template-rows: repeat(3, 12rem);
@@ -289,14 +297,14 @@ nav ul li a {
     }
 
     .topnav a {
-        font-size: 1.1em;
+        font-size: 1em;
         padding: 1.5em;
     }
 
     #myLinks a {
         font-size: 1em;
         padding: 0.3em;
-        padding-top: 1.5em;
+        padding-top: 1em;
     }
 
     .game-controls {
@@ -306,6 +314,17 @@ nav ul li a {
         align-items: center;
     }
 
+
+    .icon i {
+        font-size: 2em;
+    }
+
+    .active {
+        margin-top: 0.8em;
+        font-size: 2em;
+    }
+
+
 }
 
 
@@ -314,6 +333,14 @@ nav ul li a {
 @media (max-width: 30rem) {
     html {
         font-size: 10px;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 
     #start-game {
@@ -347,14 +374,14 @@ nav ul li a {
     }
 
     .topnav a {
-        font-size: 1.1em;
+        font-size: 1em;
         padding: 2em;
     }
 
     #myLinks a {
-        font-size: 1em;
-        padding: 0.3em;
-        padding-top: 2em;
+        font-size: 0.8em;
+        padding: 0.2em;
+        padding-top: 1em;
     }
 
     .game-controls {
@@ -362,6 +389,15 @@ nav ul li a {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .icon i {
+        font-size: 1.5em;
+    }
+
+    .active {
+        margin-top: 0.8em;
+        font-size: 1em;
     }
 
 }

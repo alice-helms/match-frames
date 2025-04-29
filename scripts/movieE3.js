@@ -18,6 +18,7 @@ let timerInterval;
 let score = 0;
 let matched = 0;
 let mistakes = 0;
+let message = '';
 let flippedCards = [];
 const board = document.getElementById('game-board');
 const timerDisplay = document.getElementById('timer');
@@ -25,6 +26,7 @@ const scoreDisplay = document.getElementById('score');
 const nextLevelBtn = document.getElementById('next-level');
 const mistakesDisplay = document.getElementById('mistakes');
 const startBtn = document.getElementById('start-game');
+const winMessage = document.getElementById('win-message');
 
 function shuffle(array) {
     return array.concat(array).sort(() => 0.5 - Math.random());
@@ -56,7 +58,15 @@ function generateBoard() {
 }
 
 function handleClick(card) {
-    if (flippedCards.includes(card) || card.classList.contains('matched') || flippedCards.length === 2) return;
+    if (card.classList.contains('matched') || flippedCards.length === 2) return;
+
+    if (flippedCards.includes(card)) {
+        card.classList.remove('selected');
+        flippedCards = flippedCards.filter(c => c !== card);
+        return;
+    }
+
+    card.classList.add('selected');
     flippedCards.push(card);
 
     if (flippedCards.length === 2) {
@@ -64,13 +74,37 @@ function handleClick(card) {
         if (first.dataset.matchId === second.dataset.matchId) {
             first.classList.add('matched');
             second.classList.add('matched');
+
+            first.classList.remove('selected');
+            second.classList.remove('selected');
+
             score++;
             scoreDisplay.textContent = score;
             matched += 2;
             if (matched === imagePairs.length) {
                 nextLevelBtn.style.display = 'inline-block';
                 clearInterval(timerInterval);
+
+                confetti({
+                    particleCount: 200,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+
+                if (timer <= 10) {
+                    message = `Master of the Match! (${timer} seconds)`;
+                } else if (timer <= 30) {
+                    message = `Not bad, you're pretty quick! (${timer} seconds)`;
+                } else if (timer <= 60) {
+                    message = `Took your sweet time... (${timer} seconds)`;
+                } else {
+                    message = `Wow, were you making popcorn too? (${timer} seconds)`;
+                }
+
+                winMessage.textContent = message;
+                winMessage.classList.remove('hidden');
             }
+
             flippedCards = [];
         } else {
             mistakes++;
@@ -79,14 +113,13 @@ function handleClick(card) {
             first.classList.add('shake');
             second.classList.add('shake');
             setTimeout(() => {
-                first.classList.remove('shake');
-                second.classList.remove('shake');
+                first.classList.remove('shake', 'selected');
+                second.classList.remove('shake', 'selected');
                 flippedCards = [];
             }, 500);
         }
     }
 }
-
 nextLevelBtn.addEventListener('click', () => {
     alert('Next level coming soon!');
 });
