@@ -29,11 +29,11 @@ body {
 p {
     font-size: 2em;
     line-height: 1.4;
-    font-family: "Silkscreen", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(200, 228, 200);
-    margin-bottom: -2em;
+    margin-bottom: -3em;
 }
 
 h1 {
@@ -54,7 +54,7 @@ h2 {
 
 h3 {
     font-size: 3em;
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: rgb(200, 228, 200);
@@ -263,16 +263,18 @@ h4 {
     font-size: 2.2rem;
 }
 
-/*
+
 .icon-overlay i:hover {
-    color: rgb(192, 27, 192);
+    color: black;
 }
 
-.overlay-text :hover {
-    color: ;
+.icon-overlay2 i:hover {
+    color: black;
 }
-*/
 
+.icon-overlay3 i:hover {
+    color: black;
+}
 
 
 .icon-overlay2 {
