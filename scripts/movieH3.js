@@ -27,6 +27,7 @@ const nextLevelBtn = document.getElementById('next-level');
 const mistakesDisplay = document.getElementById('mistakes');
 const startBtn = document.getElementById('start-game');
 const winMessage = document.getElementById('win-message');
+const endMessage = document.getElementById('end-message');
 
 function shuffle(array) {
     return array.concat(array).sort(() => 0.5 - Math.random());
@@ -122,7 +123,9 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    alert('Next level coming soon!');
+    endMessage.textContent = "The End of Movies!";
+    endMessage.classList.remove('hidden');
+    nextLevelBtn.style.display = 'none';
 });
 
 startBtn.addEventListener('click', () => {

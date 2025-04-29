@@ -121,7 +121,7 @@ function handleClick(card) {
     }
 }
 nextLevelBtn.addEventListener('click', () => {
-    alert('Next level coming soon!');
+    window.location.href = 'movieM1.html';
 });
 
 startBtn.addEventListener('click', () => {

@@ -122,7 +122,7 @@ function handleClick(card) {
 }
 
 nextLevelBtn.addEventListener('click', () => {
-    alert('Next level coming soon!');
+    window.location.href = 'tvM1.html';
 });
 
 startBtn.addEventListener('click', () => {
